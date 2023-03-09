@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,500&display=swap');
+
+
+html{
+    font-size: 17px; /*equiv à 1rem*/
+}
+    
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+h1, h2{
+    font-family: lato;
+    
+}
+h1{
+    font-size: 2.1rem;
+    margin: 0;
+    background-color: #bf3a17;
+    font-family:lato;
+    color: #fff;    
+   
+}
+h2{
+    font-size: 1.7rem;
+}
+
+nav.menu-nav ul li.btn{
+   display: inline-block;
+   list-style-type: none;  
+       
+}
+
+nav.menu-nav ul li.btn a{
+color: rgb(10, 10, 10);
+background-color: rgb(238, 232, 232);
+text-decoration: none;
+padding: 10px;
+}
+
+nav.menu-nav ul li.btn:hover a{
+    color: red;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+
+div figure{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-inline-start: 0%;
+}
+
+
+/*classes*/    
+.items{
+    list-style-type: none;
+}
+.inputGroup{
+    background-color: #bf3a17;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+/*structures*/
+#content{
+    width: 1150px;
+    margin: auto;
+ padding-top: 20px;  
+}
+#marge-haute{
+    display: flex;
+    justify-content :space-between;
+    align-items:center; 
+}
+
+#la-une{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#articles{
+    display: flex;   
+    justify-content: space-around;
+ 
+    align-content: normal;
+  
+}
+#valdis-mickman{
+    display: block;
+    justify-content:center;
+    align-items: center;
+}
+#menu{
+    display: flex;    
+    justify-content: space-around;
+    color: #000;
+    background-color: #ebead8;
+    text-decoration: none;
+   align-items: center;
+   justify-items: center;
+  }
+  
+.people-img{
+transition: .5s;
+animation: slideDown 10s;
+
+.people-img:hoover{
+    transform: : scale: (1.1) rotate: (10deg);
+}
+
+}
+@keyframes slideDown{
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#form{
+    background-color: #bf3a17;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+
+#footer{
+    display: flex;    
+  justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #dbd5bb;
+}
+
+
+    
