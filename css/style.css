@@ -1,5 +1,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;1,300;1,500&display=swap');
 
+* {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 
 html{
     font-size: 17px; /*equiv à 1rem*/
@@ -7,8 +14,8 @@ html{
     
 
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: d3c69c;    
 }
 h1, h2{
     font-family: lato;
@@ -17,99 +24,142 @@ h1, h2{
 h1{
     font-size: 2.1rem;
     margin: 0;
-    background-color: #bf3a17;
-    font-family:lato;
-    color: #fff;    
+    background-color: #bf3a17;   
+    color: #fff;  
    
 }
 h2{
     font-size: 1.7rem;
 }
-
-nav.menu-nav ul li.btn{
-   display: inline-block;
-   list-style-type: none;  
-       
-}
-
-nav.menu-nav ul li.btn a{
-color: rgb(10, 10, 10);
-background-color: rgb(238, 232, 232);
-text-decoration: none;
-padding: 10px;
-}
-
-nav.menu-nav ul li.btn:hover a{
+a{
     color: red;
-    background-color: white;
-    transition: 0.5s all;
+}
+
+aside li::before{
+content: (fa-light fa-arrow-right);
+}
+a:hover{
+    text-decoration: underline;    
+}
+
+header{
+    position: relative;
 }
 
 
-div figure{
+/*class*/
+.align-horiz {    
+    display: flex;    
+    justify-content: space-around;
+    padding: 14px;
+    background-color: #ebead8;
+    }
+
+.align-vert {
     display: flex;
-    justify-content:left;
-    align-items: center;
-    margin-inline-start: 0%;
+    flex-direction: column;
 }
 
-
-/*classes*/    
 .items{
     list-style-type: none;
 }
 .inputGroup{
-    background-color: #bf3a17;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #bf3a17;   
     color: #fff;
 }
+
+/*****************/
+banner p{
+    background-color: #bf3a17;
+}
+#primary-nav ul li.btn a{
+color: #000;
+background-color: #ebead8;
+padding: 14px;
+text-decoration: none;
+}
+
+#primary-nav ul li.btn:hover a{
+    color: red;
+    background-color: white;}
+
+
+div figure{   
+    justify-content:left;
+    align-items: center;
+   
+}
+
 
 /*structures*/
 #content{
     width: 1150px;
     margin: auto;
- padding-top: 20px;  
+    padding-top: 20px;  
 }
-#marge-haute{
+
+#logo{
     display: flex;
     justify-content :space-between;
     align-items:center; 
 }
 
-#la-une{
+#banner{
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;   
+
+}
+#titre p:nth-child(1){
+color:aquamarine;
+font-size: 30px;
+}
+
+#titre p:nth-child(2){
+color:#000;
+font-size: 60px;
+}
+
+#titre p:nth-child(3){
+color:#bf3a17;
+font-size: 50px;
+margin-left: 70px;
+}
+
+#titre p:nth-child(4){
+color: #000;
+font-size: 30px;
+margin-left: 70px;
 }
 
 #articles{
-    display: flex;   
-    justify-content: space-around;
- 
-    align-content: normal;
+    justify-content: space-between;
+
   
 }
+#titre img{
+    position :fixed;
+}
+
 #valdis-mickman{
-    display: block;
+    display: inline-block;
     justify-content:center;
     align-items: center;
 }
-#menu{
-    display: flex;    
-    justify-content: space-around;
-    color: #000;
-    background-color: #ebead8;
-    text-decoration: none;
-   align-items: center;
-   justify-items: center;
-  }
-  
+#form{
+    background-color: #bf3a17;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+
+
+  /*
 .people-img{
 transition: .5s;
 animation: slideDown 10s;
 
-.people-img:hoover{
+.people-img:hover{
     transform: : scale: (1.1) rotate: (10deg);
 }
 
@@ -124,22 +174,10 @@ animation: slideDown 10s;
         opacity: 1;
     }
 }
-
-#form{
-    background-color: #bf3a17;
-    margin-top: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-}
-
-
-#footer{
-    display: flex;    
-  justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+*
+footer{  
     background-color: #dbd5bb;
 }
-
-
-    
+footer div{
+    justify-content: space-between;    
+}
