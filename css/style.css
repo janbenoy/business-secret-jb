@@ -13,23 +13,20 @@ html{
     font-size: 17px; /*equiv à 1rem*/
 }
     
-
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: #d3c69c;    
+    background-color: #fff;    
 }
 h1, h2{
     font-family: lato;
-    
-}
+    }
 h1{
     font-size: 2.1rem;
     margin: 0;
     padding: 0;
     background-color: #bf3a17;   
     color: #fff;  
-   
-}
+   }
 h2{
     font-size: 1.7rem;
 }
@@ -87,8 +84,7 @@ text-decoration: none;
 div figure{   
     justify-content:left;
     align-items: center;
-   
-}
+   }
 
 
 /*structures*/
@@ -136,11 +132,9 @@ margin-left: 70px;
 #articles{
     justify-content: space-between;
 
+}
+
   
-}
-#titre img{
-    position :fixed;
-}
 
 #valdis-mickman{
     display: inline-block;
