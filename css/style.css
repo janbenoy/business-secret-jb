@@ -16,7 +16,7 @@ html{
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: d3c69c;    
+    background: #d3c69c;    
 }
 h1, h2{
     font-family: lato;
@@ -38,7 +38,7 @@ a{
 }
 
 aside li::before{
-content: (fa-light fa-arrow-right);
+content: "";
 }
 a:hover{
     text-decoration: underline;    
@@ -71,9 +71,7 @@ header{
 }
 
 /*****************/
-banner p{
-    background-color: #bf3a17;
-}
+
 #primary-nav ul li.btn a{
 color: #000;
 background-color: #ebead8;
@@ -163,29 +161,38 @@ aside ul li::before{
     content: '';
     }
     
-  /*
-.people-img{
-transition: .5s;
-animation: slideDown 10s;
+    footer{  
+        background-color: #dbd5bb;
+    }
+    footer div{
+        justify-content: space-between;
+    }
 
-.people-img:hover{
-    transform: : scale: (1.1) rotate: (10deg);
-}
+    /*animation */
+    .peole img ::before{
+        content: "titre < p";
+        position :absolute;
+        transition: 0.5s;
+        transition : 1s;
+    }
 
+
+/* animation apparition*/
+
+#titre p{
+margin-top: 0px;
+animation: apparition 0.8s ease-out;
 }
-@keyframes slideDown{
-    from {
-        transform: translateX(200px);
+@keyframes apparition{
+    from{
         opacity: 0;
+        transform: translateX(-100px);
+        right: -100px;
     }
-    to {
-        transform: translateX(0);
+    to{
         opacity: 1;
+        transform: translateX(0px);
+        left: 0px;
     }
 }
-*
-footer{  
-    background-color: #dbd5bb;
-}
-footer div{
-    justify-content: space-between;    
+
